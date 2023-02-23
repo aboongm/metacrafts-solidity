@@ -106,7 +106,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.18",      // Fetch exact version from solc-bin (default: truffle's version)
+      version: '0.8.18', // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
@@ -115,7 +115,7 @@ module.exports = {
       //  },
       //  evmVersion: "byzantium"
       // }
-    }
+    },
   },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
@@ -139,3 +139,27 @@ module.exports = {
   //   }
   // }
 };
+
+// module.exports = {
+//   networks: {
+//     development: {
+//       host: '127.0.0.1',
+//       port: 8545,
+//       network_id: '*', // Match any network id
+//     },
+//   },
+
+//   // Set default mocha options here, use special reporters, etc.
+//   mocha: {},
+
+//   // Configure your compilers
+//   compilers: {
+//     solc: {
+//       version: '0.8.18', // Fetch exact version from solc-bin (default: truffle's version)
+//     },
+//   },
+
+//   db: {
+//     enabled: false,
+//   },
+// };
