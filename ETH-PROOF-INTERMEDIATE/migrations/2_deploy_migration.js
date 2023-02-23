@@ -3,7 +3,13 @@
 //   deployer.deploy(HelloWorld);
 // };
 
-var ModifierAdmin = artifacts.require('ModifierAdmin');
+// var ModifierAdmin = artifacts.require('ModifierAdmin');
+// module.exports = function (deployer) {
+//   deployer.deploy(ModifierAdmin);
+// };
+
+const EventContract = artifacts.require('EventContract');
+
 module.exports = function (deployer) {
-  deployer.deploy(ModifierAdmin);
+  deployer.deploy(EventContract);
 };
