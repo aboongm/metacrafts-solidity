@@ -36,8 +36,9 @@ const WalletCard = () => {
     getAccountBalance(newAccount.toString());
   };
 
-  const getAccountBalance = (account) => {
-    window.ethereum
+  const getAccountBalance = async (account) => {
+    // console.log('getAccount: ', ethers);
+    await window.ethereum
       .request({ method: 'eth_getBalance', params: [account, 'latest'] })
       .then((balance) => {
         setUserBalance(ethers.utils.formatEther(balance));
